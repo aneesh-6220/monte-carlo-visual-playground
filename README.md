@@ -1,6 +1,6 @@
 # Monte Carlo Visual Playground
 
-Live App: https://YOUR-APP-LINK.streamlit.app
+Live App: https://monte-carlo-visual-playground.streamlit.app
 
 A beginner-focused Python/Streamlit app for exploring how randomness and volatility affect long-term outcomes using Monte Carlo simulation.
 
