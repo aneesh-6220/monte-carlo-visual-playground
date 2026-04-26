@@ -58,11 +58,9 @@ This is the core idea behind probabilistic thinking and quantitative modeling.
 
 ---
 
-## Screenshots
+## Screenshot
 
-(Add screenshots here after deployment)
-
-![App Screenshot](screenshots/app-screenshot.png)
+![App](screenshots/app.png)
 
 ---
 
