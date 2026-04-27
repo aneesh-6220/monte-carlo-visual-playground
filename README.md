@@ -2,6 +2,8 @@
 
 Live App: https://monte-carlo-visual-playground.streamlit.app
 
+Note: The app may take a few seconds to load if it has been inactive.
+
 A beginner-focused Python/Streamlit app for exploring how randomness and volatility affect long-term outcomes using Monte Carlo simulation.
 
 This project is built as a learning tool to understand uncertainty, not to predict real markets.
