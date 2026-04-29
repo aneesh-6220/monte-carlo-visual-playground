@@ -226,28 +226,22 @@ with chart_column_2:
     histogram_figure = plot_final_value_histogram(final_values, starting_value)
     st.pyplot(histogram_figure)
 
-with st.expander("What this simulation means", expanded=True):
+with st.expander("What this simulation shows", expanded=True):
     st.markdown(
         """
-        **Monte Carlo simulation** means running the same model many times with
-        random changes each time. Instead of giving one answer, it shows a range
-        of possible outcomes.
+        A **Monte Carlo simulation** runs the same model many times with different random sequences. Instead of producing a single outcome, it shows a **distribution of possible results** under the same assumptions.
 
-        **Volatility** is a way to describe how much values can bounce around.
-        Higher volatility usually means the paths spread out more. Some paths
-        may end much higher, while others may end much lower.
+**Volatility** controls how widely outcomes spread. Higher volatility increases dispersion, meaning a wider range between low and high final values.
 
-        Different paths happen because each simulation receives different random
-        monthly returns. The assumptions stay the same, but the random sequence
-        of good and bad months changes.
+Each path differs because returns are randomly generated at each step. The model assumptions remain fixed, but the sequence of gains and losses changes.
 
-        This is **not a prediction**. It does not know what the market will do.
-        It is only a learning tool for thinking about uncertainty and risk.
+This is **not a prediction** of the future. It is a way to explore how **uncertainty affects outcomes over time**.
 
-        The **5th percentile** means about 5% of simulations ended below that
-        value. The **95th percentile** means about 95% of simulations ended below
-        that value. Together, they give a rough sense of a lower and upper range
-        in the simulated outcomes.
+The **5th and 95th percentiles** describe the lower and upper bounds of most simulated results. They provide a rough sense of **downside risk and upside potential** within the model.
+
+---
+
+**Key takeaway:** Small changes in assumptions (return, volatility, time horizon) can produce significantly different outcome distributions.
         """
     )
 show_footer()
