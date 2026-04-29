@@ -6,6 +6,24 @@ import streamlit as st
 from src.metrics import calculate_summary_metrics
 from src.simulation import simulate_investment_paths
 
+st.markdown("""
+<style>
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #6B7280;
+    font-size: 0.85rem;
+}
+.footer a {
+    color: #2563EB;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+</style>
+""", unsafe_allow_html=True)
+
 
 DEFAULT_STARTING_VALUE = 10_000
 DEFAULT_EXPECTED_RETURN = 7
@@ -72,6 +90,19 @@ def plot_final_value_histogram(final_values, starting_value):
     ax.legend()
 
     return fig
+
+def show_footer():
+    st.markdown(
+        """
+        <div class="footer">
+            Educational simulation tool · Not financial advice · 
+            <a href="https://github.com/aneesh-6220/monte-carlo-visual-playground" target="_blank">
+                Source code
+            </a>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 st.set_page_config(
@@ -219,3 +250,4 @@ with st.expander("What this simulation means", expanded=True):
         in the simulated outcomes.
         """
     )
+show_footer()
